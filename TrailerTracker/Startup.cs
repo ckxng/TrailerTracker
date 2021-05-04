@@ -62,7 +62,8 @@ namespace TrailerTracker
             app.UseRouting();
 
             app.UseAuthentication();
-            app.UseAuthorization();
+            // Don't auto-login.
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
